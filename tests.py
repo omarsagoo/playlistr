@@ -11,12 +11,14 @@ sample_playlist = {
     'videos': [
         'https://youtube.com/embed/hY7m5jjJ9mM',
         'https://www.youtube.com/embed/CQ85sUNBK7w'
-    ]
+    ],
+    'rating': '4'
 }
 sample_form_data = {
     'title': sample_playlist['title'],
     'description': sample_playlist['description'],
-    'videos': '\n'.join(sample_playlist['videos'])
+    'videos': '\n'.join(sample_playlist['videos']),
+    'rating':sample_playlist['rating']
 }
 
 class PlaylistsTests(TestCase):
