@@ -20,8 +20,21 @@
       <p>Add videos in the form of 'https://youtube.com/embed/KEY'. Separate with a newline.</p>
       <textarea id='playlist-videos' name='videos' rows='10' />{{ "\n".join(playlist.videos) }}</textarea>
     </p>
+
+    <!-- Rating -->
+    <p>
+        <label for="rating">rating</label>
+        <select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+    </p>
     </fieldset>
     
     <!-- BUTTON -->
     <p>
         <button type='submit'>Save Playlist</button>
+        <button type='cancel'>Cancel</button>
