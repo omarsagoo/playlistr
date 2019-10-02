@@ -1,9 +1,9 @@
 import os
+from datetime import datetime
 
 from bson.objectid import ObjectId
 from flask import Flask, redirect, render_template, request, url_for
 from pymongo import MongoClient
-from datetime import datetime
 
 host = os.environ.get('MONGODB_URI', 'mongodb://localhost:27017/Playlister')
 client = MongoClient(host=host)
