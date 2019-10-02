@@ -19,8 +19,8 @@
         <textarea class='form-control' id='playlist-videos' name='videos' rows='10' />{{ "\n".join(playlist.videos) }}</textarea>
     </div>
     <div class='form-group'>
-        <label for="rating">rating</label> 
-        <select>
+        <label for="rating" value="rating">rating</label> 
+        <select class='form-control' id='rating' name='rating' value='{{playlist.rating}}'>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
